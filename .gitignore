@@ -1,0 +1,25 @@
+# Applies to every stage folder. Nested .gitignore files add to this.
+
+# Environment files: real credentials live here. Templates stay tracked.
+.env
+.env.*
+!.env.example
+
+# Dependencies and build output
+node_modules/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# curl cookie jars from manual API testing (may hold a live auth token)
+cookies.txt
+
+# Local backups and OS / editor clutter
+*.tar.gz
+.DS_Store
+.vscode/
+.idea/
